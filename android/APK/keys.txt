@@ -1,0 +1,3 @@
+signing.store.password=abulafia, 
+signing.key.alias=sim-evolution_key
+signing.key.password=CEFET-RJ

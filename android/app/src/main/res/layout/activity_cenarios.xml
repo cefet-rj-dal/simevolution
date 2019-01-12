@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_cenarios"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg3"
+    tools:context="usuario.app.sim_evolution.activities.CenariosActivity">
+
+    <LinearLayout
+        android:id="@+id/layout_cenarios_btn_topo_esquerda"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <ToggleButton
+            android:id="@+id/btn_sound"
+            android:layout_width="39dp"
+            android:layout_height="42dp"
+            android:textOff=""
+            android:textOn=""
+            android:background="@drawable/botao_tocar_musica_selector"
+            android:layout_marginLeft="5sp"
+            android:layout_marginTop="4sp"
+            android:checked="true" />
+
+        <LinearLayout
+            android:id="@+id/layout_cenarios_btn_topo_direita"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:gravity="right"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_help"
+                android:src="@drawable/btn_help"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="@null"
+                android:paddingTop="4sp"
+                android:paddingRight="5sp" />
+
+            <!--<ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_exit"
+                android:src="@drawable/btn_exit"
+                android:background="@null"
+                android:paddingTop="4sp"
+                android:paddingRight="5sp" />-->
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_cenarios_titulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bg_titulo_cenarios"
+            android:src="@drawable/bg_titulo_cenarios"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_cenarios_opcoes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_savana"
+            android:src="@drawable/btn_savana"
+            android:background="@null"
+            android:paddingTop="8dp"
+            android:onClick="callAvesActivity2"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_floresta"
+            android:src="@drawable/btn_floresta"
+            android:background="@null"
+            android:paddingTop="8dp"
+            android:onClick="callAvesActivity1"/>
+
+    </LinearLayout>
+
+</LinearLayout>

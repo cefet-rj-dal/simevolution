@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_principal"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="usuario.app.sim_evolution.activities.PrincipalActivity"
+    android:background="@drawable/bg1">
+
+    <LinearLayout
+        android:id="@+id/layout_principal_btn_topo_esquerda"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <ToggleButton
+            android:id="@+id/btn_sound"
+            android:layout_width="39dp"
+            android:layout_height="42dp"
+            android:textOff=""
+            android:textOn=""
+            android:background="@drawable/botao_tocar_musica_selector"
+            android:layout_marginLeft="5sp"
+            android:layout_marginTop="4sp"
+            android:checked="true" />
+
+        <LinearLayout
+            android:id="@+id/layout_principal_btn_topo_direita"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:gravity="right"
+            android:orientation="horizontal">
+
+            <!--<ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_exit"
+                android:src="@drawable/btn_exit"
+                android:background="@null"
+                android:paddingTop="4sp"
+                android:paddingRight="5sp"/>-->
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_principal_logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/img_logo"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/logo" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_principal_opcoes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingTop="16sp">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_entrar"
+            android:src="@drawable/btn_entrar"
+            android:background="@null"
+            android:onClick="callTipoSimulacaoActivity"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_sobre"
+            android:src="@drawable/btn_sobre"
+            android:background="@null"
+            android:paddingTop="16sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

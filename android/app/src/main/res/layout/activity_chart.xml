@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_chart"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="usuario.app.sim_evolution.activities.ChartActivity">
+
+    <LinearLayout
+        android:id="@+id/layout_chart_btn_topo_esquerda"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <!--<ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_sound"
+            android:src="@drawable/btn_sound_on"
+            android:background="@null"
+            android:paddingTop="5dp"
+            android:paddingLeft="5dp" />-->
+
+        <LinearLayout
+            android:id="@+id/layout_chart_btn_topo_direita"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:gravity="right"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_help"
+                android:src="@drawable/btn_help"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="@null"
+                android:paddingTop="5dp"
+                android:paddingRight="5dp" />
+
+            <!--<ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_redo"
+                android:src="@drawable/btn_redo"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="@null"
+                android:paddingTop="5dp"
+                android:paddingRight="5dp"/> -->
+
+            <!--<ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_stop"
+                android:src="@drawable/btn_stop"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="@null"
+                android:paddingTop="5dp"
+                android:paddingRight="5dp"
+                android:onClick="callPrincipalActivity"/>-->
+
+            <!--<ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_exit"
+                android:src="@drawable/btn_exit"
+                android:background="@null"
+                android:paddingTop="5dp"
+                android:paddingRight="5dp" />-->
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_chart_corpo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_below="@+id/layout_chart_btn_topo_esquerda">
+
+        <com.github.mikephil.charting.charts.LineChart
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/lineChart"></com.github.mikephil.charting.charts.LineChart>
+
+    </LinearLayout>
+
+</RelativeLayout>

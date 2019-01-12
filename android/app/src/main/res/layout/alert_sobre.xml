@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <ScrollView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:scrollbars="vertical"
+        android:scrollbarAlwaysDrawHorizontalTrack="true">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/cefet_rj"
+                android:id="@+id/logo_cefet"
+                android:paddingLeft="10sp"
+                android:paddingTop="8dp"/>
+
+            <TextView
+                android:id="@+id/txt_sobre_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="O Sim-Evolution é um simulador educacional desenvolvido como TCC por Diego Vaz Caetano, Josué Dias Cardoso e Luana Guimarães Piani Ferreira, alunos do CS-TSI do CEFET/RJ, em 2017."
+                android:paddingLeft="10sp"
+                android:paddingRight="10sp"
+                android:paddingTop="8dp"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:id="@+id/txt_sobre_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Apresenta de forma simplificada a evolução de variedades distintas de uma determinada espécie de ave em diferentes ambientes, sob os conceitos básicos da teoria da Seleção Natural de Charles Darwin e da genética Mendeliana."
+                android:paddingLeft="10sp"
+                android:paddingRight="10sp"
+                android:paddingTop="8dp"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:id="@+id/txt_sobre_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Contribua com a nossa pesquisa acadêmica preenchendo o formulário de avaliação do aplicativo no endereço abaixo:"
+                android:paddingLeft="10sp"
+                android:paddingRight="10sp"
+                android:paddingTop="8dp"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:id="@+id/txt_sobre_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="#0A497E"
+                android:autoLink="web"
+                android:text="https://docs.google.com/forms/d/e/1FAIpQLSejPxpqMuvwPpcQeq8Gia2k9tEhW4R5XxQJsw7mQS-2BxkNXg/viewform"
+                android:paddingLeft="10sp"
+                android:paddingRight="10sp"
+                android:paddingTop="8dp"
+                android:textAlignment="center"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

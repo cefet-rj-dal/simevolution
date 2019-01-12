@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_simulacao"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="usuario.app.sim_evolution.activities.SimulacaoActivity">
+
+    <LinearLayout
+        android:id="@+id/layout_simulacao_btn_topo_esquerda"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <ToggleButton
+            android:id="@+id/btn_sound"
+            android:layout_width="39dp"
+            android:layout_height="42dp"
+            android:textOff=""
+            android:textOn=""
+            android:background="@drawable/botao_tocar_musica_selector"
+            android:layout_marginLeft="5sp"
+            android:layout_marginTop="4sp"
+            android:checked="true" />
+
+        <LinearLayout
+            android:id="@+id/layout_contador"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:paddingLeft="10dp"
+            android:layout_gravity="left"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tempo: "
+                android:id="@+id/lblContador"
+                android:layout_alignParentTop="true"
+                android:textColor="#000000"
+                android:textSize="18dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtContador"
+                android:layout_alignBottom="@+id/lblContador"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textColor="#000000"
+                android:textSize="18dp"/>
+
+            <!--<ProgressBar
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="220dp"
+                android:layout_height="20dp"
+                android:id="@+id/timeProgressBar"
+                android:paddingLeft="5sp"/>-->
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_simulacao_btn_topo_direita"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:gravity="right"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_help"
+                android:src="@drawable/btn_help"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="@null"
+                android:paddingTop="4sp"
+                android:paddingRight="5sp" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_chart"
+                android:src="@drawable/btn_chart"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="@null"
+                android:paddingTop="4sp"
+                android:paddingRight="5sp"
+                android:onClick="callChartActivity"/>
+
+            <ToggleButton
+                android:layout_width="39dp"
+                android:layout_height="42dp"
+                android:id="@+id/btn_pause"
+                android:src="@drawable/btn_pause"
+                android:textOn=""
+                android:textOff=""
+                android:background="@drawable/botao_iniciar_pausar_simulacao_selector"
+                android:layout_marginTop="4sp"
+                android:layout_marginRight="5sp"
+                android:onClick="iniciarPausarSimulacao"/>
+
+            <!--<ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_stop"
+                android:src="@drawable/btn_stop"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="@null"
+                android:paddingTop="5dp"
+                android:paddingRight="5dp"
+                android:onClick="callPrincipalActivity"/>-->
+
+            <!--<ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_exit"
+                android:src="@drawable/btn_exit"
+                android:background="@null"
+                android:paddingTop="4sp"
+                android:paddingRight="5sp"/>-->
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/simulacao_corpo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:paddingTop="60dp">
+
+        <LinearLayout
+            android:id="@+id/aves_corpo_opcoes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="left"
+            android:layout_gravity="left">
+
+            <LinearLayout
+                android:id="@+id/aves_opcoes1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="left"
+                android:layout_gravity="left">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/img_4422"
+                    android:src="@drawable/ave_4422"
+                    android:paddingRight="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/qtd_4422"
+                    android:paddingRight="20dp"
+                    android:textColor="#000000"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/img_4421"
+                    android:src="@drawable/ave_4421"
+                    android:paddingRight="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/qtd_4421"
+                    android:paddingRight="20dp"
+                    android:textColor="#000000"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/img_4411"
+                    android:src="@drawable/ave_4411"
+                    android:paddingRight="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/qtd_4411"
+                    android:paddingRight="20dp"
+                    android:textColor="#000000"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/aves_opcoes2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="left"
+                android:layout_gravity="left"
+                android:layout_marginTop="18dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/img_4322"
+                    android:src="@drawable/ave_4322"
+                    android:paddingRight="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/qtd_4322"
+                    android:paddingRight="20dp"
+                    android:textColor="#000000"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/img_4321"
+                    android:src="@drawable/ave_4321"
+                    android:paddingRight="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/qtd_4321"
+                    android:paddingRight="20dp"
+                    android:textColor="#000000"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/img_4311"
+                    android:src="@drawable/ave_4311"
+                    android:paddingRight="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/qtd_4311"
+                    android:paddingRight="20dp"
+                    android:textColor="#000000"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/aves_opcoes3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="left"
+                android:layout_gravity="left"
+                android:layout_marginTop="18dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/img_3322"
+                    android:src="@drawable/ave_3322"
+                    android:paddingRight="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/qtd_3322"
+                    android:paddingRight="20dp"
+                    android:textColor="#000000"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/img_3321"
+                    android:src="@drawable/ave_3321"
+                    android:paddingRight="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/qtd_3321"
+                    android:paddingRight="20dp"
+                    android:textColor="#000000"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/img_3311"
+                    android:src="@drawable/ave_3311"
+                    android:paddingRight="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/qtd_3311"
+                    android:paddingRight="20dp"
+                    android:textColor="#000000"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

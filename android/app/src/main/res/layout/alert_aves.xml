@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <ScrollView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:scrollbars="vertical"
+        android:scrollbarAlwaysDrawHorizontalTrack="true">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/txt1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="Selecione até 4 variações da espécie dentre as 9 possíveis para participarem da simulação."
+                android:paddingLeft="10sp"
+                android:paddingRight="10sp" />
+            <TextView
+                android:id="@+id/txt2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="As aves possuem fenótipos específicos que influenciarão em sua sobrevivência no ambiente escolhido:"
+                android:paddingRight="10sp"
+                android:paddingLeft="10sp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="43dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:src="@drawable/ave_4422"
+                    android:id="@+id/ave_4422"
+                    android:paddingLeft="10sp"/>
+
+                <TextView
+                    android:id="@+id/txt_4422"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:text="Fenótipo: Cor Verde/Bico Grande | Genótipo: AABB"
+                    android:paddingLeft="10sp"
+                    android:paddingRight="10sp"
+                    android:paddingTop="8dp"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="43dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:src="@drawable/ave_4421"
+                    android:id="@+id/ave_4421"
+                    android:paddingLeft="10sp"/>
+
+                <TextView
+                    android:id="@+id/txt_4421"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:text="Fenótipo: Cor Verde/Bico Médio | Genótipo: AABb"
+                    android:paddingLeft="10sp"
+                    android:paddingRight="10sp"
+                    android:paddingTop="8dp"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="43dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:src="@drawable/ave_4411"
+                    android:id="@+id/ave_4411"
+                    android:paddingLeft="10sp"/>
+
+                <TextView
+                    android:id="@+id/txt_4411"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:text="Fenótipo: Cor Verde/Bico Pequeno | Genótipo: AAbb"
+                    android:paddingLeft="10sp"
+                    android:paddingRight="10sp"
+                    android:paddingTop="8dp"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="43dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:src="@drawable/ave_4322"
+                    android:id="@+id/ave_4322"
+                    android:paddingLeft="10sp"/>
+
+                <TextView
+                    android:id="@+id/txt_4322"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:text="Fenótipo: Cor Mesclado/Bico Grande | Genótipo: AaBB"
+                    android:paddingLeft="10sp"
+                    android:paddingRight="10sp"
+                    android:paddingTop="8dp"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="43dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:src="@drawable/ave_4321"
+                    android:id="@+id/ave_4321"
+                    android:paddingLeft="10sp"/>
+
+                <TextView
+                    android:id="@+id/txt_4321"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:text="Fenótipo: Cor Mesclado/Bico Médio | Genótipo: AaBb"
+                    android:paddingLeft="10sp"
+                    android:paddingRight="10sp"
+                    android:paddingTop="8dp"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="43dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:src="@drawable/ave_4311"
+                    android:id="@+id/ave_4311"
+                    android:paddingLeft="10sp"/>
+
+                <TextView
+                    android:id="@+id/txt_4311"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:text="Fenótipo: Cor Mesclado/Bico Pequeno | Genótipo: Aabb"
+                    android:paddingLeft="10sp"
+                    android:paddingRight="10sp"
+                    android:paddingTop="8dp"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="43dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:src="@drawable/ave_3322"
+                    android:id="@+id/ave_3322"
+                    android:paddingLeft="10sp"/>
+
+                <TextView
+                    android:id="@+id/txt_3322"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:text="Fenótipo: Cor Amarelo/Bico Grande | Genótipo: aaBB"
+                    android:paddingLeft="10sp"
+                    android:paddingRight="10sp"
+                    android:paddingTop="8dp"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="43dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:src="@drawable/ave_3321"
+                    android:id="@+id/ave_3321"
+                    android:paddingLeft="10sp"/>
+
+                <TextView
+                    android:id="@+id/txt_3321"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:text="Fenótipo: Cor Amarelo/Bico Médio | Genótipo: aaBb"
+                    android:paddingLeft="10sp"
+                    android:paddingRight="10sp"
+                    android:paddingTop="8dp"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="43dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:src="@drawable/ave_3311"
+                    android:id="@+id/ave_3311"
+                    android:paddingLeft="10sp"/>
+
+                <TextView
+                    android:id="@+id/txt_3311"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:text="Fenótipo: Cor Amarelo/Bico Pequeno | Genótipo: aabb"
+                    android:paddingLeft="10sp"
+                    android:paddingRight="10sp"
+                    android:paddingTop="8dp"/>
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/txt3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="As aves com cor VERDE se camuflam melhor na FLORESTA e têm maior probabilidade de escapar de predadores, ao contrário das amarelas."
+                android:paddingRight="10sp"
+                android:paddingLeft="10sp" />
+            <TextView
+                android:id="@+id/txt4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="Já as aves com BICOS MAIORES e mais finos, que se alimentariam principalmente de insetos e larvas, se saem melhor na SAVANA e as com bico em forma de ALICATE, na FLORESTA, onde há mais ofertas de frutos e sementes."
+                android:paddingRight="10sp"
+                android:paddingLeft="10sp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

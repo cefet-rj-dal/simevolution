@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <ScrollView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:scrollbars="vertical"
+        android:scrollbarAlwaysDrawHorizontalTrack="true">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/txt1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="Aqui você definirá os valores de aptidão de cada fenótipo (cor e formato de bico)."
+                android:paddingLeft="10sp"
+                android:paddingRight="10sp" />
+
+            <TextView
+                android:id="@+id/txt2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="CHANCES DE PREDAÇÃO: define as chances de SOBREVIVÊNCIA de aves com cada cor no ambiente. Assim, quanto MENOR o valor, MENOR será a probabilidade de a ave ser predada."
+                android:paddingRight="10sp"
+                android:paddingLeft="10sp" />
+
+            <TextView
+                android:id="@+id/txt3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="CHANCES DE ALIMENTAÇÃO: define as chances de REPRODUÇÃO de aves com um determinado formato de bico no ambiente. Aves que se alimentam melhor têm mais energia e se reproduzem mais. Dessa forma, quanto MENOR o valor, MENOR será a chance de a ave se alimentar no ambiente."
+                android:paddingRight="10sp"
+                android:paddingLeft="10sp" />
+
+            <TextView
+                android:id="@+id/txt4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="Informe somente valores MAIORES que 0.00 e ATÉ 1.00 (inclusive)."
+                android:paddingRight="10sp"
+                android:paddingLeft="10sp" />
+
+            <TextView
+                android:id="@+id/txt5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="A SOMA dos três valores de cada fenótipo deve ser IGUAL a 1.00, ou seja, os valores de cor somados devem totalizar 1.00 e da mesma forma os valores de formato de bico."
+                android:paddingRight="10sp"
+                android:paddingLeft="10sp" />
+
+            <TextView
+                android:id="@+id/txt7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="Os campos já vêm preenchidos com valores padrão."
+                android:paddingRight="10sp"
+                android:paddingLeft="10sp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
